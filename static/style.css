@@ -1,0 +1,95 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("../static/images/Vintage-flower-old-parchment-renaissance-free-hd.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.wrapper {
+  background-image: url("../static/images/green_pink_floral.PNG");
+  border: 20px transparent solid;
+  border-radius: 15px;
+  max-width: fit-content;
+  
+}
+
+pre {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #F7EBC6; 
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 15px;
+
+}
+
+.poem-form {
+  padding: 10px;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #4e482f; /* Dark brown heading color */
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4e482f; /* Dark brown label color */
+}
+
+select,
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  background-color: #f0ead6; /* Light brown select background */
+}
+
+input[type="submit"] {
+  background-color: #4e482f; /* Dark brown submit button background */
+  color: #fff; /* White submit button text color */
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #635c3d; /* Darker brown on hover */
+}
+
+h2 {
+  color: #4e482f; /* Dark brown heading color */
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  color: #4e482f; /* Dark brown text color */
+}

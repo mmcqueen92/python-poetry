@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static', static_folder='static')
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -23,7 +23,7 @@ def home():
 
 def generate_poetry(user_input_type, user_input_subject):
     try:
-        prompt = f"Write a {user_input_type} about {user_input_subject}"
+        prompt = f"Write a {user_input_type} about {user_input_subject}. please write <br/> at the end of each line"
 
         response = openai.Completion.create(
             engine="text-davinci-002",
@@ -32,6 +32,8 @@ def generate_poetry(user_input_type, user_input_subject):
         )
 
         generated_text = response.choices[0].text.strip()
+        generated_text_split = generated_text.split("<br>")
+        
 
         return generated_text
     except Exception as e:
