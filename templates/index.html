@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Poetry Generator</title>
+</head>
+<body>
+    <h1>Generate Poetry</h1>
+    <form method="POST">
+        <label for="user_input_type">Select Poem Type:</label>
+        <select name="user_input_type" id="user_input_type">
+            <option value="sonnet">Sonnet</option>
+            <option value="haiku">Haiku</option>
+            <option value="free_verse">Free Verse</option>
+            <option value="ode">Ode</option>
+            <option value="ballad">Ballad</option>
+            <option value="sea-shanty">Sea shanty</option>
+            <option value="limerick">Limerick</option>
+            <option value="tanka">Tanka</option>
+        </select><br>
+
+        <label for="user_input_subject">Enter Subject:</label>
+        <input type="text" name="user_input_subject" id="user_input_subject" required><br>
+
+        <input type="submit" value="Generate">
+    </form>
+    <h2>Generated Poem:</h2>
+    <p>{{ generated_text }}</p>
+</body>
+</html>
